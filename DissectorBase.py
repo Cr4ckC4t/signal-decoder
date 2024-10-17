@@ -3,7 +3,7 @@ class DissectorBase:
 		self._input_vars = {}
 
 	def ingest(self, raw: str) -> None:
-		# append possible/valid input variations to self.input_vars
+		# append possible/valid decoded input variations to self._input_vars using add_variant
 		pass
 
 	def add_variant(self, variant: str, name: str) -> None:
@@ -23,4 +23,4 @@ class DissectorBase:
 
 	def show_variants(self):
 		for name,variant in self._input_vars.items():
-			print(f'======\n{name}: {variant}')
+			print(f'======> {name}:\n {variant}')
