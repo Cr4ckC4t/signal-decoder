@@ -13,3 +13,9 @@ Finally, `show_variants` prints all results.
 ---
 
 To add your own dissector, just copy the existing one and modify the logic to interpret the input (the file must start with `Dis` and end with `.py`). Next up could be a dissector for NRZ (and its variants).
+
+# Usage
+
+```
+python3 main.py <input file containing only 1s and 0s>
+```
