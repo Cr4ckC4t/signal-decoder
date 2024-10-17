@@ -9,3 +9,7 @@ Every dissector is supposed to call `add_variant` in the `ingest` method with th
 After all dissectors had their chance to decode the input and submitted possible results, the `filter` method is used to discard all variants that don't contain a specified string (like `ctf{`).
 
 Finally, `show_variants` prints all results.
+
+---
+
+To add your own dissector, just copy the existing one and modify the logic to interpret the input (the file must start with `Dis` and end with `.py`). Next up could be a dissector for NRZ (and its variants).
